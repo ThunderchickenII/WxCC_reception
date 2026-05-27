@@ -8,287 +8,203 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=DM+Mono:wght@400;500&display=swap');
 
 :root {
-  --bg: #ffffff; --bg-alt: #f7f8fa; --surface: #f0f1f5; --surface-2: #e4e6ec;
-  --border: #d0d3dc; --text: #111827; --text-muted: #5f6578;
-  --accent: #2563eb; --accent-dim: rgba(37,99,235,0.07); --accent-hover: #1d4ed8;
-  --green: #059669; --green-dim: rgba(5,150,105,0.08); --green-bright: #10b981;
-  --amber: #d97706; --amber-dim: rgba(217,119,6,0.08);
-  --red: #dc2626; --red-dim: rgba(220,38,38,0.06);
-  --cyan: #0891b2; --cyan-dim: rgba(8,145,178,0.08);
-  --vip-gold: #b45309; --vip-bg: rgba(251,191,36,0.10); --vip-border: rgba(251,191,36,0.35);
-  --purple: #7c3aed; --purple-dim: rgba(124,58,237,0.08);
-  --internal-bg: rgba(37,99,235,0.06); --internal-border: rgba(37,99,235,0.30);
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06); --shadow-lg: 0 8px 30px rgba(0,0,0,0.10);
-  --ring: 0 0 0 3px rgba(37,99,235,0.15);
-  --hold-orange: #ea580c; --hold-dim: rgba(234,88,12,0.08);
-  --conf-teal: #0d9488; --conf-dim: rgba(13,148,136,0.08);
+  --bg:#ffffff; --bg-alt:#f7f8fa; --surface:#f0f1f5; --surface-2:#e4e6ec;
+  --border:#d0d3dc; --text:#111827; --text-muted:#5f6578;
+  --accent:#2563eb; --accent-dim:rgba(37,99,235,0.07); --accent-hover:#1d4ed8;
+  --green:#059669; --green-dim:rgba(5,150,105,0.08); --green-bright:#10b981;
+  --amber:#d97706; --amber-dim:rgba(217,119,6,0.08);
+  --red:#dc2626; --red-dim:rgba(220,38,38,0.06);
+  --cyan:#0891b2; --cyan-dim:rgba(8,145,178,0.08);
+  --vip-gold:#b45309; --vip-bg:rgba(251,191,36,0.10); --vip-border:rgba(251,191,36,0.35);
+  --purple:#7c3aed; --purple-dim:rgba(124,58,237,0.08);
+  --internal-bg:rgba(37,99,235,0.06); --internal-border:rgba(37,99,235,0.30);
+  --shadow-sm:0 1px 3px rgba(0,0,0,0.06); --shadow-lg:0 8px 30px rgba(0,0,0,0.10);
+  --ring:0 0 0 3px rgba(37,99,235,0.15);
+  --hold-orange:#ea580c; --hold-dim:rgba(234,88,12,0.08);
+  --conf-teal:#0d9488; --conf-dim:rgba(13,148,136,0.08);
+  --cc-bg:#fafafa; --cc-border:#e5e7eb;
 }
 [data-theme="dark"] {
-  --bg: #0c0e14; --bg-alt: #111420; --surface: #181b26; --surface-2: #222638;
-  --border: #2e3348; --text: #e8eaf0; --text-muted: #868ca3;
-  --accent: #4d8cff; --accent-dim: rgba(77,140,255,0.10); --accent-hover: #6da1ff;
-  --green: #34d399; --green-dim: rgba(52,211,153,0.10); --green-bright: #34d399;
-  --amber: #fbbf24; --amber-dim: rgba(251,191,36,0.10);
-  --red: #f87171; --red-dim: rgba(248,113,113,0.08);
-  --cyan: #22d3ee; --cyan-dim: rgba(34,211,238,0.10);
-  --vip-gold: #fbbf24; --vip-bg: rgba(251,191,36,0.08); --vip-border: rgba(251,191,36,0.30);
-  --purple: #a78bfa; --purple-dim: rgba(167,139,250,0.10);
-  --internal-bg: rgba(77,140,255,0.08); --internal-border: rgba(77,140,255,0.30);
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.2); --shadow-lg: 0 8px 30px rgba(0,0,0,0.4);
-  --ring: 0 0 0 3px rgba(77,140,255,0.2);
-  --hold-orange: #fb923c; --hold-dim: rgba(251,146,60,0.10);
-  --conf-teal: #2dd4bf; --conf-dim: rgba(45,212,191,0.10);
+  --bg:#0c0e14; --bg-alt:#111420; --surface:#181b26; --surface-2:#222638;
+  --border:#2e3348; --text:#e8eaf0; --text-muted:#868ca3;
+  --accent:#4d8cff; --accent-dim:rgba(77,140,255,0.10); --accent-hover:#6da1ff;
+  --green:#34d399; --green-dim:rgba(52,211,153,0.10); --green-bright:#34d399;
+  --amber:#fbbf24; --amber-dim:rgba(251,191,36,0.10);
+  --red:#f87171; --red-dim:rgba(248,113,113,0.08);
+  --cyan:#22d3ee; --cyan-dim:rgba(34,211,238,0.10);
+  --vip-gold:#fbbf24; --vip-bg:rgba(251,191,36,0.08); --vip-border:rgba(251,191,36,0.30);
+  --purple:#a78bfa; --purple-dim:rgba(167,139,250,0.10);
+  --internal-bg:rgba(77,140,255,0.08); --internal-border:rgba(77,140,255,0.30);
+  --shadow-sm:0 1px 3px rgba(0,0,0,0.2); --shadow-lg:0 8px 30px rgba(0,0,0,0.4);
+  --ring:0 0 0 3px rgba(77,140,255,0.2);
+  --hold-orange:#fb923c; --hold-dim:rgba(251,146,60,0.10);
+  --conf-teal:#2dd4bf; --conf-dim:rgba(45,212,191,0.10);
+  --cc-bg:#141722; --cc-border:#2a2e40;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html, body { height: 100%; overflow: hidden; }
-body {
-  font-family: 'DM Sans', system-ui, sans-serif;
-  background: var(--bg); color: var(--text);
-  transition: background 0.35s, color 0.35s;
-  display: flex; flex-direction: column;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{height:100%;overflow:hidden;}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);transition:background 0.35s,color 0.35s;display:flex;flex-direction:column;}
 
 /* TOPBAR */
-.topbar {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 10px 20px; background: var(--surface);
-  border-bottom: 1px solid var(--border); flex-shrink: 0; z-index: 100;
-}
-.topbar-left { display: flex; align-items: center; gap: 14px; }
-.logo { font-size: 18px; font-weight: 700; letter-spacing: -0.5px; color: var(--accent); }
-.logo-sub { font-size: 11px; color: var(--text-muted); font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; }
-.topbar-right { display: flex; align-items: center; gap: 12px; }
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:10px 20px;background:var(--surface);border-bottom:1px solid var(--border);flex-shrink:0;z-index:100;}
+.topbar-left{display:flex;align-items:center;gap:14px;}
+.logo{font-size:18px;font-weight:700;letter-spacing:-0.5px;color:var(--accent);}
+.logo-sub{font-size:11px;color:var(--text-muted);font-weight:500;letter-spacing:0.5px;text-transform:uppercase;}
+.topbar-right{display:flex;align-items:center;gap:12px;}
+.status-toggle{display:flex;background:var(--surface-2);border:1px solid var(--border);border-radius:24px;padding:3px;}
+.status-btn{padding:6px 18px;border:none;border-radius:20px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:all .25s;background:transparent;color:var(--text-muted);letter-spacing:.3px;text-transform:uppercase;}
+.status-btn.active-available{background:var(--green);color:#fff;box-shadow:0 2px 8px rgba(5,150,105,.35);}
+.status-btn.active-busy{background:var(--red);color:#fff;box-shadow:0 2px 8px rgba(220,38,38,.35);}
+.theme-toggle{display:flex;gap:2px;background:var(--surface-2);border:1px solid var(--border);border-radius:20px;padding:3px;}
+.theme-btn{display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;border:none;cursor:pointer;font-size:14px;background:transparent;color:var(--text-muted);transition:all .25s;}
+.theme-btn.active{background:var(--accent);color:#fff;}
+.live-indicator{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;color:var(--green);background:var(--green-dim);padding:5px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:.5px;}
+.live-dot{width:6px;height:6px;background:var(--green-bright);border-radius:50%;animation:pulse 2s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.3;transform:scale(.7);}}
 
-.status-toggle { display: flex; background: var(--surface-2); border: 1px solid var(--border); border-radius: 24px; padding: 3px; }
-.status-btn {
-  padding: 6px 18px; border: none; border-radius: 20px;
-  font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 600;
-  cursor: pointer; transition: all 0.25s; background: transparent;
-  color: var(--text-muted); letter-spacing: 0.3px; text-transform: uppercase;
-}
-.status-btn.active-available { background: var(--green); color: #fff; box-shadow: 0 2px 8px rgba(5,150,105,0.35); }
-.status-btn.active-busy { background: var(--red); color: #fff; box-shadow: 0 2px 8px rgba(220,38,38,0.35); }
+/* INCOMING BANNER */
+.incoming-banner{flex-shrink:0;background:var(--vip-bg);border-bottom:2px solid var(--vip-border);max-height:0;overflow:hidden;padding:0 20px;transition:max-height .4s ease,padding .4s ease;}
+.incoming-banner.active{max-height:200px;padding:14px 20px;}
+.incoming-banner.internal{background:var(--internal-bg);border-bottom-color:var(--internal-border);}
+.incoming-inner{display:flex;align-items:center;justify-content:space-between;}
+.incoming-info{display:flex;align-items:center;gap:16px;}
+.incoming-icon{width:48px;height:48px;border-radius:50%;background:var(--vip-border);display:flex;align-items:center;justify-content:center;font-size:22px;animation:ring .6s ease-in-out infinite alternate;}
+.incoming-banner.internal .incoming-icon{background:var(--internal-border);}
+@keyframes ring{0%{transform:rotate(-8deg) scale(1);}100%{transform:rotate(8deg) scale(1.05);}}
+.incoming-details h3{font-size:15px;font-weight:700;color:var(--vip-gold);margin-bottom:2px;}
+.incoming-banner.internal .incoming-details h3{color:var(--accent);}
+.incoming-details p{font-size:13px;color:var(--text-muted);}
+.badge-vip{display:inline-block;font-size:10px;font-weight:700;color:var(--vip-gold);background:var(--vip-bg);border:1px solid var(--vip-border);padding:1px 6px;border-radius:4px;margin-left:6px;letter-spacing:.8px;}
+.badge-internal{display:inline-block;font-size:10px;font-weight:700;color:var(--accent);background:var(--accent-dim);border:1px solid var(--internal-border);padding:1px 6px;border-radius:4px;margin-left:6px;letter-spacing:.8px;}
+.incoming-actions{display:flex;gap:10px;}
+.btn-answer{padding:8px 24px;border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer;background:var(--green);color:#fff;transition:all .2s;box-shadow:0 2px 8px rgba(5,150,105,.3);}
+.btn-answer:hover{background:#047857;transform:translateY(-1px);}
+.btn-decline{padding:8px 24px;border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer;background:var(--red-dim);color:var(--red);border:1px solid var(--red);transition:all .2s;}
+.btn-decline:hover{background:var(--red);color:#fff;}
 
-.theme-toggle { display: flex; gap: 2px; background: var(--surface-2); border: 1px solid var(--border); border-radius: 20px; padding: 3px; }
-.theme-btn {
-  display: flex; align-items: center; justify-content: center;
-  width: 28px; height: 28px; border-radius: 50%; border: none; cursor: pointer;
-  font-size: 14px; background: transparent; color: var(--text-muted); transition: all 0.25s;
-}
-.theme-btn.active { background: var(--accent); color: #fff; }
+/* ===== WEBEX CC CALL CONTROL BAR ===== */
+.cc-bar{flex-shrink:0;max-height:0;overflow:hidden;transition:max-height .4s ease;border-bottom:1px solid var(--cc-border);}
+.cc-bar.active{max-height:500px;}
 
-.live-indicator {
-  display: flex; align-items: center; gap: 6px;
-  font-size: 11px; font-weight: 600; color: var(--green); background: var(--green-dim);
-  padding: 5px 12px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;
-}
-.live-dot { width: 6px; height: 6px; background: var(--green-bright); border-radius: 50%; animation: pulse 2s ease-in-out infinite; }
-@keyframes pulse { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:0.3; transform:scale(0.7); } }
+/* Row 1: Caller ID left, buttons right — dark strip */
+.cc-row1{display:flex;align-items:center;justify-content:space-between;padding:8px 20px;background:var(--surface);border-bottom:1px solid var(--cc-border);}
+.cc-caller-id{font-size:15px;font-weight:700;font-family:'DM Mono',monospace;letter-spacing:.3px;}
+.cc-row1-right{display:flex;align-items:center;gap:6px;}
 
-/* BANNERS */
-.incoming-banner {
-  flex-shrink: 0; background: var(--vip-bg); border-bottom: 2px solid var(--vip-border);
-  max-height: 0; overflow: hidden; padding: 0 20px;
-  transition: max-height 0.4s ease, padding 0.4s ease;
-}
-.incoming-banner.active { max-height: 200px; padding: 14px 20px; }
-.incoming-banner.internal { background: var(--internal-bg); border-bottom-color: var(--internal-border); }
+.cc-ctrl{display:flex;align-items:center;gap:5px;padding:5px 14px;border:1px solid var(--border);border-radius:20px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;cursor:pointer;background:transparent;color:var(--text);transition:all .2s;white-space:nowrap;}
+.cc-ctrl:hover{background:var(--surface-2);}
+.cc-ctrl.active-hold{background:var(--hold-orange);color:#fff;border-color:var(--hold-orange);}
+.cc-ctrl.active-hold:hover{opacity:.85;}
+.cc-ctrl-icon{font-size:13px;}
 
-.incoming-inner { display: flex; align-items: center; justify-content: space-between; }
-.incoming-info { display: flex; align-items: center; gap: 16px; }
-.incoming-icon {
-  width: 48px; height: 48px; border-radius: 50%; background: var(--vip-border);
-  display: flex; align-items: center; justify-content: center; font-size: 22px;
-  animation: ring 0.6s ease-in-out infinite alternate;
-}
-.incoming-banner.internal .incoming-icon { background: var(--internal-border); }
-@keyframes ring { 0% { transform:rotate(-8deg) scale(1); } 100% { transform:rotate(8deg) scale(1.05); } }
+.cc-ctrl-end{display:flex;align-items:center;gap:5px;padding:5px 16px;border:none;border-radius:20px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:700;cursor:pointer;background:var(--red);color:#fff;transition:all .2s;}
+.cc-ctrl-end:hover{opacity:.85;}
 
-.incoming-details h3 { font-size: 15px; font-weight: 700; color: var(--vip-gold); margin-bottom: 2px; }
-.incoming-banner.internal .incoming-details h3 { color: var(--accent); }
-.incoming-details p { font-size: 13px; color: var(--text-muted); }
-.vip-inline { display:inline-block; font-size:10px; font-weight:700; color:var(--vip-gold); background:var(--vip-bg); border:1px solid var(--vip-border); padding:1px 6px; border-radius:4px; margin-left:6px; letter-spacing:0.8px; }
-.internal-inline { display:inline-block; font-size:10px; font-weight:700; color:var(--accent); background:var(--accent-dim); border:1px solid var(--internal-border); padding:1px 6px; border-radius:4px; margin-left:6px; letter-spacing:0.8px; }
+.cc-more{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border:1px solid var(--border);border-radius:50%;font-size:14px;cursor:pointer;background:transparent;color:var(--text-muted);transition:all .2s;letter-spacing:2px;}
+.cc-more:hover{background:var(--surface-2);}
 
-.incoming-actions { display: flex; gap: 10px; }
-.btn-answer { padding:8px 24px; border:none; border-radius:8px; font-family:'DM Sans',sans-serif; font-size:13px; font-weight:600; cursor:pointer; background:var(--green); color:#fff; transition:all 0.2s; box-shadow:0 2px 8px rgba(5,150,105,0.3); }
-.btn-answer:hover { background:#047857; transform:translateY(-1px); }
-.btn-decline { padding:8px 24px; border:none; border-radius:8px; font-family:'DM Sans',sans-serif; font-size:13px; font-weight:600; cursor:pointer; background:var(--red-dim); color:var(--red); border:1px solid var(--red); transition:all 0.2s; }
-.btn-decline:hover { background:var(--red); color:#fff; }
+/* Row 2: Green phone icon + timer */
+.cc-row2{display:flex;align-items:center;gap:10px;padding:6px 20px;background:var(--cc-bg);}
+.cc-row2.on-hold .cc-phone-icon{background:var(--hold-orange);}
+.cc-row2.on-hold .cc-timer-text{color:var(--hold-orange);}
 
-/* CONNECTED BAR */
-.connected-bar {
-  flex-shrink: 0; background: var(--green-dim); border-bottom: 2px solid var(--green);
-  max-height: 0; overflow: hidden; padding: 0 20px;
-  transition: max-height 0.4s ease, padding 0.4s ease;
-}
-.connected-bar.active { max-height: 200px; padding: 12px 20px; }
-.connected-bar.on-hold { background: var(--hold-dim); border-bottom-color: var(--hold-orange); }
+.cc-phone-icon{width:22px;height:22px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;}
+.cc-timer-text{font-family:'DM Mono',monospace;font-size:13px;font-weight:500;color:var(--text-muted);}
+.cc-hold-label{font-size:11px;font-weight:700;color:var(--hold-orange);text-transform:uppercase;letter-spacing:.5px;margin-left:6px;display:none;}
+.cc-hold-label.show{display:inline;}
+.cc-conf-label{font-size:10px;font-weight:700;color:var(--conf-teal);background:var(--conf-dim);border:1px solid var(--conf-teal);padding:1px 6px;border-radius:4px;letter-spacing:.5px;margin-left:6px;display:none;}
+.cc-conf-label.show{display:inline-block;}
+.cc-badge-area{margin-left:8px;}
 
-.connected-inner { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.connected-info { display: flex; align-items: center; gap: 14px; flex: 1; min-width: 0; }
-.connected-icon {
-  width: 42px; height: 42px; border-radius: 50%; background: var(--green);
-  display: flex; align-items: center; justify-content: center; font-size: 18px; color: #fff;
-  flex-shrink: 0;
-}
-.connected-bar.on-hold .connected-icon { background: var(--hold-orange); }
-.connected-details { min-width: 0; }
-.connected-details h3 { font-size: 14px; font-weight: 700; color: var(--green); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.connected-bar.on-hold .connected-details h3 { color: var(--hold-orange); }
-.connected-details p { font-size: 12px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.connected-timer { font-family: 'DM Mono', monospace; font-size: 22px; font-weight: 500; color: var(--green); flex-shrink: 0; }
-.connected-bar.on-hold .connected-timer { color: var(--hold-orange); }
+/* Row 3: Call detail fields — two columns */
+.cc-row3{padding:12px 20px 14px 20px;background:var(--cc-bg);display:grid;grid-template-columns:1fr 1fr;row-gap:8px;column-gap:40px;}
 
-.call-controls { display: flex; gap: 6px; flex-shrink: 0; }
+.cc-field{display:flex;align-items:baseline;gap:8px;}
+.cc-field-label{font-size:12px;font-weight:700;color:var(--text);white-space:nowrap;min-width:130px;}
+.cc-field-value{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+.cc-field-value.text{font-family:'DM Sans',sans-serif;}
+.cc-field-value .badge-vip,.cc-field-value .badge-internal{font-size:9px;vertical-align:middle;margin-left:4px;}
 
-.ctrl-btn {
-  padding: 7px 14px; border: none; border-radius: 8px;
-  font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 600;
-  cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 5px;
-  letter-spacing: 0.2px;
-}
+/* ===== PANELS ===== */
+.panels{flex:1;display:flex;min-height:0;}
 
-.ctrl-hold { background: var(--hold-dim); color: var(--hold-orange); border: 1px solid var(--hold-orange); }
-.ctrl-hold:hover { background: var(--hold-orange); color: #fff; }
-.ctrl-hold.active { background: var(--hold-orange); color: #fff; animation: holdPulse 1.5s ease-in-out infinite; }
-@keyframes holdPulse { 0%,100% { opacity:1; } 50% { opacity:0.7; } }
-
-.ctrl-conference { background: var(--conf-dim); color: var(--conf-teal); border: 1px solid var(--conf-teal); }
-.ctrl-conference:hover { background: var(--conf-teal); color: #fff; }
-.ctrl-conference.active { background: var(--conf-teal); color: #fff; }
-
-.ctrl-transfer { background: var(--accent-dim); color: var(--accent); border: 1px solid var(--accent); }
-.ctrl-transfer:hover { background: var(--accent); color: #fff; }
-
-.ctrl-end { background: var(--red); color: #fff; border: 1px solid var(--red); }
-.ctrl-end:hover { opacity: 0.85; }
-
-.hold-label { font-size: 10px; font-weight: 700; color: var(--hold-orange); text-transform: uppercase; letter-spacing: 0.5px; margin-left: 4px; }
-
-/* CONF STATUS */
-.conf-status {
-  font-size: 10px; font-weight: 700; color: var(--conf-teal);
-  text-transform: uppercase; letter-spacing: 0.5px;
-  background: var(--conf-dim); padding: 2px 8px; border-radius: 10px;
-  margin-left: 6px; display: none;
-}
-.conf-status.show { display: inline-block; }
-
-/* PANELS */
-.panels { flex: 1; display: flex; min-height: 0; }
-
-.queue-panel {
-  width: 340px; flex-shrink: 0; padding: 14px 16px; overflow-y: auto;
-  border-right: 1px solid var(--border);
-}
-.panel-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
-.panel-title { font-size: 14px; font-weight: 700; letter-spacing: -0.2px; }
-.queue-count { font-size:11px; font-weight:600; color:var(--accent); background:var(--accent-dim); padding:3px 10px; border-radius:12px; }
-
-.queue-filters { display: flex; gap: 5px; margin-bottom: 12px; flex-wrap: wrap; }
-.filter-btn {
-  padding:4px 10px; border:1px solid var(--border); border-radius:14px;
-  font-family:'DM Sans',sans-serif; font-size:10px; font-weight:500;
-  cursor:pointer; background:var(--surface); color:var(--text-muted); transition:all 0.2s;
-}
-.filter-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
-.filter-btn:hover:not(.active) { border-color:var(--accent); color:var(--accent); }
-
-.queue-list { display: flex; flex-direction: column; gap: 6px; }
-
-.queue-item { background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:10px 12px; cursor:pointer; transition:all 0.2s; }
-.queue-item:hover { border-color:var(--accent); box-shadow:var(--shadow-sm); transform:translateY(-1px); }
-.queue-item.vip { background:var(--vip-bg); border-color:var(--vip-border); }
-.queue-item.vip:hover { box-shadow:0 4px 16px rgba(251,191,36,0.15); }
-
-.qi-top { display:flex; align-items:center; justify-content:space-between; margin-bottom:4px; }
-.qi-office { display:flex; align-items:center; gap:5px; }
-.office-dot { width:7px; height:7px; border-radius:50%; }
-.office-dot.boston { background:#2563eb; } .office-dot.newyork { background:#7c3aed; } .office-dot.chicago { background:#059669; }
-.office-name { font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:0.4px; color:var(--text-muted); }
-.qi-badges { display:flex; gap:4px; align-items:center; }
-.vip-badge { font-size:9px; font-weight:800; color:var(--vip-gold); background:var(--vip-bg); border:1px solid var(--vip-border); padding:1px 5px; border-radius:4px; letter-spacing:1px; }
-.qi-wait { font-family:'DM Mono',monospace; font-size:10px; color:var(--text-muted); }
-.qi-middle { margin-bottom:3px; }
-.qi-caller { font-size:13px; font-weight:600; margin-bottom:1px; }
-.qi-callerid { font-family:'DM Mono',monospace; font-size:10px; color:var(--text-muted); }
-.qi-bottom { display:flex; align-items:center; justify-content:space-between; }
-.qi-attorney { font-size:11px; color:var(--text-muted); }
-.qi-attorney strong { color:var(--text); font-weight:600; }
-.qi-no-attorney { font-size:11px; color:var(--amber); font-style:italic; }
-.qi-pick-btn { padding:3px 10px; border:1px solid var(--accent); border-radius:5px; font-family:'DM Sans',sans-serif; font-size:10px; font-weight:600; cursor:pointer; background:var(--accent-dim); color:var(--accent); transition:all 0.2s; text-transform:uppercase; letter-spacing:0.3px; }
-.qi-pick-btn:hover { background:var(--accent); color:#fff; }
+.queue-panel{width:340px;flex-shrink:0;padding:14px 16px;overflow-y:auto;border-right:1px solid var(--border);}
+.panel-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;}
+.panel-title{font-size:14px;font-weight:700;letter-spacing:-.2px;}
+.queue-count{font-size:11px;font-weight:600;color:var(--accent);background:var(--accent-dim);padding:3px 10px;border-radius:12px;}
+.queue-filters{display:flex;gap:5px;margin-bottom:12px;flex-wrap:wrap;}
+.filter-btn{padding:4px 10px;border:1px solid var(--border);border-radius:14px;font-family:'DM Sans',sans-serif;font-size:10px;font-weight:500;cursor:pointer;background:var(--surface);color:var(--text-muted);transition:all .2s;}
+.filter-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.filter-btn:hover:not(.active){border-color:var(--accent);color:var(--accent);}
+.queue-list{display:flex;flex-direction:column;gap:6px;}
+.queue-item{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 12px;cursor:pointer;transition:all .2s;}
+.queue-item:hover{border-color:var(--accent);box-shadow:var(--shadow-sm);transform:translateY(-1px);}
+.queue-item.vip{background:var(--vip-bg);border-color:var(--vip-border);}
+.qi-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;}
+.qi-office{display:flex;align-items:center;gap:5px;}
+.office-dot{width:7px;height:7px;border-radius:50%;}
+.office-dot.boston{background:#2563eb;}.office-dot.newyork{background:#7c3aed;}.office-dot.chicago{background:#059669;}
+.office-name{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.4px;color:var(--text-muted);}
+.qi-badges{display:flex;gap:4px;align-items:center;}
+.vip-badge{font-size:9px;font-weight:800;color:var(--vip-gold);background:var(--vip-bg);border:1px solid var(--vip-border);padding:1px 5px;border-radius:4px;letter-spacing:1px;}
+.qi-wait{font-family:'DM Mono',monospace;font-size:10px;color:var(--text-muted);}
+.qi-middle{margin-bottom:3px;}
+.qi-caller{font-size:13px;font-weight:600;margin-bottom:1px;}
+.qi-callerid{font-family:'DM Mono',monospace;font-size:10px;color:var(--text-muted);}
+.qi-bottom{display:flex;align-items:center;justify-content:space-between;}
+.qi-attorney{font-size:11px;color:var(--text-muted);}.qi-attorney strong{color:var(--text);font-weight:600;}
+.qi-no-attorney{font-size:11px;color:var(--amber);font-style:italic;}
+.qi-pick-btn{padding:3px 10px;border:1px solid var(--accent);border-radius:5px;font-family:'DM Sans',sans-serif;font-size:10px;font-weight:600;cursor:pointer;background:var(--accent-dim);color:var(--accent);transition:all .2s;text-transform:uppercase;}
+.qi-pick-btn:hover{background:var(--accent);color:#fff;}
 
 /* DIRECTORY */
-.directory-panel { flex:1; padding:14px 20px; overflow-y:auto; background:var(--bg-alt); }
-
-.search-box { position:relative; margin-bottom:12px; }
-.search-input {
-  width:100%; padding:10px 14px 10px 36px; border:1px solid var(--border); border-radius:10px;
-  font-family:'DM Sans',sans-serif; font-size:13px; background:var(--surface); color:var(--text); transition:all 0.2s; outline:none;
-}
-.search-input:focus { border-color:var(--accent); box-shadow:var(--ring); }
-.search-input::placeholder { color:var(--text-muted); }
-.search-icon { position:absolute; left:12px; top:50%; transform:translateY(-50%); font-size:14px; color:var(--text-muted); }
-
-.dir-filters { display:flex; gap:5px; margin-bottom:12px; flex-wrap:wrap; }
-.dir-filter-btn { padding:4px 10px; border:1px solid var(--border); border-radius:12px; font-family:'DM Sans',sans-serif; font-size:10px; font-weight:500; cursor:pointer; background:transparent; color:var(--text-muted); transition:all 0.2s; }
-.dir-filter-btn.active { background:var(--accent-dim); color:var(--accent); border-color:var(--accent); }
-
-.directory-list { display:flex; flex-direction:column; gap:6px; }
-
-.dir-item { background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:10px 12px; transition:all 0.2s; }
-.dir-item:hover { border-color:var(--accent); }
-
-.di-top { display:flex; align-items:center; justify-content:space-between; margin-bottom:4px; }
-.di-name { font-size:13px; font-weight:600; }
-.di-nickname { font-size:11px; color:var(--text-muted); font-style:italic; }
-.di-status { display:inline-flex; align-items:center; gap:4px; font-size:10px; font-weight:600; padding:2px 8px; border-radius:10px; text-transform:uppercase; letter-spacing:0.3px; }
-.di-status.available { color:var(--green); background:var(--green-dim); }
-.di-status.busy { color:var(--red); background:var(--red-dim); }
-.di-status.away { color:var(--amber); background:var(--amber-dim); }
-.di-status.dnd { color:var(--purple); background:var(--purple-dim); }
-.di-status-dot { width:5px; height:5px; border-radius:50%; background:currentColor; }
-
-.di-mid { display:flex; align-items:center; gap:14px; margin-bottom:4px; }
-.di-phone { font-family:'DM Mono',monospace; font-size:11px; color:var(--text-muted); }
-.di-ext { font-family:'DM Mono',monospace; font-size:11px; color:var(--accent); font-weight:500; }
-
-.di-bottom { display:flex; align-items:center; justify-content:space-between; }
-.di-office { font-size:11px; color:var(--text-muted); }
-.di-actions { display:flex; gap:5px; }
-
-.di-action-btn {
-  padding:3px 9px; border-radius:5px; font-family:'DM Sans',sans-serif; font-size:10px; font-weight:600;
-  cursor:pointer; transition:all 0.2s; text-transform:uppercase; letter-spacing:0.3px; display:none;
-}
-.di-action-btn.show { display:inline-block; }
-
-.di-transfer-btn { background:var(--green-dim); color:var(--green); border:1px solid var(--green); }
-.di-transfer-btn:hover { background:var(--green); color:#fff; }
-.di-conf-btn { background:var(--conf-dim); color:var(--conf-teal); border:1px solid var(--conf-teal); }
-.di-conf-btn:hover { background:var(--conf-teal); color:#fff; }
+.directory-panel{flex:1;padding:14px 20px;overflow-y:auto;background:var(--bg-alt);}
+.search-box{position:relative;margin-bottom:12px;}
+.search-input{width:100%;padding:10px 14px 10px 36px;border:1px solid var(--border);border-radius:10px;font-family:'DM Sans',sans-serif;font-size:13px;background:var(--surface);color:var(--text);transition:all .2s;outline:none;}
+.search-input:focus{border-color:var(--accent);box-shadow:var(--ring);}
+.search-input::placeholder{color:var(--text-muted);}
+.search-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:14px;color:var(--text-muted);}
+.dir-filters{display:flex;gap:5px;margin-bottom:12px;flex-wrap:wrap;}
+.dir-filter-btn{padding:4px 10px;border:1px solid var(--border);border-radius:12px;font-family:'DM Sans',sans-serif;font-size:10px;font-weight:500;cursor:pointer;background:transparent;color:var(--text-muted);transition:all .2s;}
+.dir-filter-btn.active{background:var(--accent-dim);color:var(--accent);border-color:var(--accent);}
+.directory-list{display:flex;flex-direction:column;gap:6px;}
+.dir-item{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 12px;transition:all .2s;}
+.dir-item:hover{border-color:var(--accent);}
+.di-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;}
+.di-name{font-size:13px;font-weight:600;}.di-nickname{font-size:11px;color:var(--text-muted);font-style:italic;}
+.di-status{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;text-transform:uppercase;letter-spacing:.3px;}
+.di-status.available{color:var(--green);background:var(--green-dim);}
+.di-status.busy{color:var(--red);background:var(--red-dim);}
+.di-status.away{color:var(--amber);background:var(--amber-dim);}
+.di-status.dnd{color:var(--purple);background:var(--purple-dim);}
+.di-status-dot{width:5px;height:5px;border-radius:50%;background:currentColor;}
+.di-mid{display:flex;align-items:center;gap:14px;margin-bottom:4px;}
+.di-phone{font-family:'DM Mono',monospace;font-size:11px;color:var(--text-muted);}
+.di-ext{font-family:'DM Mono',monospace;font-size:11px;color:var(--accent);font-weight:500;}
+.di-bottom{display:flex;align-items:center;justify-content:space-between;}
+.di-office{font-size:11px;color:var(--text-muted);}
+.di-actions{display:flex;gap:5px;}
+.di-action-btn{padding:3px 9px;border-radius:5px;font-family:'DM Sans',sans-serif;font-size:10px;font-weight:600;cursor:pointer;transition:all .2s;text-transform:uppercase;letter-spacing:.3px;display:none;}
+.di-action-btn.show{display:inline-block;}
+.di-transfer-btn{background:var(--green-dim);color:var(--green);border:1px solid var(--green);}
+.di-transfer-btn:hover{background:var(--green);color:#fff;}
+.di-conf-btn{background:var(--conf-dim);color:var(--conf-teal);border:1px solid var(--conf-teal);}
+.di-conf-btn:hover{background:var(--conf-teal);color:#fff;}
 
 /* OVERLAY */
-.transfer-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.5); display:none; align-items:center; justify-content:center; z-index:200; }
-.transfer-overlay.active { display:flex; }
-.transfer-modal { background:var(--bg); border:1px solid var(--border); border-radius:16px; padding:28px; text-align:center; box-shadow:var(--shadow-lg); max-width:400px; width:90%; }
-.transfer-modal h3 { font-size:16px; font-weight:700; margin-bottom:6px; }
-.transfer-modal p { font-size:13px; color:var(--text-muted); margin-bottom:4px; }
-.transfer-spinner { width:40px; height:40px; border:3px solid var(--border); border-top-color:var(--accent); border-radius:50%; animation:spin 0.8s linear infinite; margin:16px auto; }
-@keyframes spin { to { transform:rotate(360deg); } }
-.transfer-success { display:none; }
-.transfer-success.show { display:block; }
-.transfer-progress { display:block; }
-.transfer-progress.hide { display:none; }
-.transfer-check { width:48px; height:48px; border-radius:50%; background:var(--green-dim); display:flex; align-items:center; justify-content:center; margin:12px auto; font-size:24px; color:var(--green); }
-.transfer-ok-btn { margin-top:14px; padding:8px 32px; border:none; border-radius:8px; font-family:'DM Sans',sans-serif; font-size:13px; font-weight:600; cursor:pointer; background:var(--accent); color:#fff; }
-
-::-webkit-scrollbar { width:6px; }
-::-webkit-scrollbar-track { background:transparent; }
-::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
+.transfer-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;align-items:center;justify-content:center;z-index:200;}
+.transfer-overlay.active{display:flex;}
+.transfer-modal{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:28px;text-align:center;box-shadow:var(--shadow-lg);max-width:400px;width:90%;}
+.transfer-modal h3{font-size:16px;font-weight:700;margin-bottom:6px;}
+.transfer-modal p{font-size:13px;color:var(--text-muted);margin-bottom:4px;}
+.transfer-spinner{width:40px;height:40px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;margin:16px auto;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.transfer-success{display:none;}.transfer-success.show{display:block;}
+.transfer-progress{display:block;}.transfer-progress.hide{display:none;}
+.transfer-check{width:48px;height:48px;border-radius:50%;background:var(--green-dim);display:flex;align-items:center;justify-content:center;margin:12px auto;font-size:24px;color:var(--green);}
+.transfer-ok-btn{margin-top:14px;padding:8px 32px;border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer;background:var(--accent);color:#fff;}
+::-webkit-scrollbar{width:6px;}::-webkit-scrollbar-track{background:transparent;}::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px;}
 </style>
 </head>
 <body>
@@ -296,44 +212,49 @@ body {
 <div class="topbar">
   <div class="topbar-left"><div><div class="logo">&#9742; Attendant Console</div><div class="logo-sub">Reception Switchboard</div></div></div>
   <div class="topbar-right">
-    <div class="status-toggle">
-      <button class="status-btn" id="btnAvail" onclick="setStatus('available')">Available</button>
-      <button class="status-btn active-busy" id="btnBusy" onclick="setStatus('busy')">Busy</button>
-    </div>
-    <div class="theme-toggle">
-      <button class="theme-btn active" id="lightBtn" onclick="setTheme('light')">&#9788;</button>
-      <button class="theme-btn" id="darkBtn" onclick="setTheme('dark')">&#9790;</button>
-    </div>
+    <div class="status-toggle"><button class="status-btn" id="btnAvail" onclick="setStatus('available')">Available</button><button class="status-btn active-busy" id="btnBusy" onclick="setStatus('busy')">Busy</button></div>
+    <div class="theme-toggle"><button class="theme-btn active" id="lightBtn" onclick="setTheme('light')">&#9788;</button><button class="theme-btn" id="darkBtn" onclick="setTheme('dark')">&#9790;</button></div>
     <div class="live-indicator"><span class="live-dot"></span>Live</div>
   </div>
 </div>
 
 <div class="incoming-banner" id="incomingBanner">
   <div class="incoming-inner">
-    <div class="incoming-info">
-      <div class="incoming-icon">&#9742;</div>
-      <div class="incoming-details" id="incomingDetails"></div>
-    </div>
-    <div class="incoming-actions">
-      <button class="btn-answer" onclick="answerCall()">&#9742; Answer</button>
-      <button class="btn-decline" onclick="declineCall()">Decline</button>
-    </div>
+    <div class="incoming-info"><div class="incoming-icon">&#9742;</div><div class="incoming-details" id="incomingDetails"></div></div>
+    <div class="incoming-actions"><button class="btn-answer" onclick="answerCall()">&#9742; Answer</button><button class="btn-decline" onclick="declineCall()">Decline</button></div>
   </div>
 </div>
 
-<div class="connected-bar" id="connectedBar">
-  <div class="connected-inner">
-    <div class="connected-info">
-      <div class="connected-icon" id="connIcon">&#9742;</div>
-      <div class="connected-details" id="connectedDetails"></div>
+<!-- ===== WEBEX CC CALL CONTROL BAR ===== -->
+<div class="cc-bar" id="ccBar">
+  <!-- Row 1: Caller number + control buttons -->
+  <div class="cc-row1">
+    <div class="cc-caller-id" id="ccCallerId">+12076506970</div>
+    <div class="cc-row1-right">
+      <button class="cc-ctrl" id="btnHold" onclick="toggleHold()"><span class="cc-ctrl-icon">&#9612;&#9612;</span> Hold</button>
+      <button class="cc-ctrl" id="btnConsult" onclick="toggleConference()"><span class="cc-ctrl-icon">&#9743;</span> Consult</button>
+      <button class="cc-ctrl" onclick="initiateTransfer()"><span class="cc-ctrl-icon">&#8644;</span> Transfer</button>
+      <button class="cc-ctrl" id="btnPauseRec" onclick="toggleRecording()"><span class="cc-ctrl-icon">&#9210;</span> Pause Recording</button>
+      <button class="cc-more" title="More options">&#8943;</button>
+      <button class="cc-ctrl-end" onclick="endCall()">&#10005; End</button>
     </div>
-    <div class="connected-timer" id="connectedTimer">0:00</div>
-    <div class="call-controls">
-      <button class="ctrl-btn ctrl-hold" id="btnHold" onclick="toggleHold()">&#9208; Hold</button>
-      <button class="ctrl-btn ctrl-conference" id="btnConf" onclick="toggleConference()">&#9743; Conf</button>
-      <button class="ctrl-btn ctrl-transfer" onclick="initiateTransfer()">&#8644; Transfer</button>
-      <button class="ctrl-btn ctrl-end" onclick="endCall()">&#9746; End</button>
-    </div>
+  </div>
+  <!-- Row 2: Phone icon + timer -->
+  <div class="cc-row2" id="ccRow2">
+    <div class="cc-phone-icon" id="ccPhoneIcon">&#9742;</div>
+    <span class="cc-timer-text" id="ccTimer">00:00</span>
+    <span class="cc-hold-label" id="ccHoldLabel">ON HOLD</span>
+    <span class="cc-conf-label" id="ccConfLabel">CONFERENCE</span>
+    <span class="cc-badge-area" id="ccBadgeArea"></span>
+  </div>
+  <!-- Row 3: Call detail fields (2-column layout matching Webex CC) -->
+  <div class="cc-row3" id="ccRow3">
+    <div class="cc-field"><span class="cc-field-label">Phone Number</span><span class="cc-field-value" id="fPhoneNum">—</span></div>
+    <div class="cc-field"><span class="cc-field-label">DNIS</span><span class="cc-field-value" id="fDNIS">—</span></div>
+    <div class="cc-field"><span class="cc-field-label">Queue</span><span class="cc-field-value text" id="fQueue">—</span></div>
+    <div class="cc-field"><span class="cc-field-label">Assigned Attorney</span><span class="cc-field-value text" id="fAttorney">—</span></div>
+    <div class="cc-field"><span class="cc-field-label">CSQ</span><span class="cc-field-value text" id="fCSQ">—</span></div>
+    <div class="cc-field"><span class="cc-field-label">Customer Type</span><span class="cc-field-value text" id="fCustType">—</span></div>
   </div>
 </div>
 
@@ -349,13 +270,9 @@ body {
     </div>
     <div class="queue-list" id="queueList"></div>
   </div>
-
   <div class="directory-panel">
     <div class="panel-header"><div class="panel-title">Ropes &amp; Gray Directory</div></div>
-    <div class="search-box">
-      <span class="search-icon">&#128269;</span>
-      <input class="search-input" id="dirSearch" type="text" placeholder="Search name, nickname, extension, office..." oninput="renderDirectory()">
-    </div>
+    <div class="search-box"><span class="search-icon">&#128269;</span><input class="search-input" id="dirSearch" type="text" placeholder="Search name, nickname, extension, office..." oninput="renderDirectory()"></div>
     <div class="dir-filters">
       <button class="dir-filter-btn active" data-df="all" onclick="setDirFilter('all',this)">All</button>
       <button class="dir-filter-btn" data-df="available" onclick="setDirFilter('available',this)">Available</button>
@@ -369,302 +286,225 @@ body {
 
 <div class="transfer-overlay" id="transferOverlay">
   <div class="transfer-modal">
-    <div class="transfer-progress" id="transferProgress">
-      <h3 id="overlayTitle">Transferring Call...</h3>
-      <p id="transferTo"></p>
-      <div class="transfer-spinner"></div>
-      <p style="font-size:11px;color:var(--text-muted)">Please wait</p>
-    </div>
-    <div class="transfer-success" id="transferSuccess">
-      <div class="transfer-check">&#10003;</div>
-      <h3 id="successTitle">Transfer Complete</h3>
-      <p id="transferDone"></p>
-      <button class="transfer-ok-btn" onclick="closeTransfer()">Done</button>
-    </div>
+    <div class="transfer-progress" id="transferProgress"><h3 id="overlayTitle">Transferring Call...</h3><p id="transferTo"></p><div class="transfer-spinner"></div><p style="font-size:11px;color:var(--text-muted)">Please wait</p></div>
+    <div class="transfer-success" id="transferSuccess"><div class="transfer-check">&#10003;</div><h3 id="successTitle">Transfer Complete</h3><p id="transferDone"></p><button class="transfer-ok-btn" onclick="closeTransfer()">Done</button></div>
   </div>
 </div>
 
 <script>
-const offices = [
-  { key:'boston', name:'Boston Office', dot:'boston', area:'617' },
-  { key:'newyork', name:'New York Office', dot:'newyork', area:'212' },
-  { key:'chicago', name:'Chicago Office', dot:'chicago', area:'312' }
+const offices=[
+  {key:'boston',name:'Boston Office',dot:'boston',area:'617',mainDid:'+16179517000'},
+  {key:'newyork',name:'New York Office',dot:'newyork',area:'212',mainDid:'+12125969000'},
+  {key:'chicago',name:'Chicago Office',dot:'chicago',area:'312',mainDid:'+13128451234'}
+];
+const extPrefixes={boston:'10',newyork:'20',chicago:'30'};
+const attorneys=[
+  {first:'Catherine',last:'Harwell',nickname:'Cat',office:'boston',status:'available',did:'',ext:''},
+  {first:'Marcus',last:'Delaney',nickname:'Marc',office:'boston',status:'busy',did:'',ext:''},
+  {first:'Priya',last:'Venkatesh',nickname:'Pri',office:'boston',status:'available',did:'',ext:''},
+  {first:'Thomas',last:'Fitzgerald',nickname:'Fitz',office:'boston',status:'away',did:'',ext:''},
+  {first:'Daniel',last:'Petrov',nickname:'Dan',office:'boston',status:'available',did:'',ext:''},
+  {first:'Sofia',last:'Marquez',nickname:'Sofi',office:'boston',status:'busy',did:'',ext:''},
+  {first:'Elena',last:'Rossi',nickname:'Lena',office:'newyork',status:'available',did:'',ext:''},
+  {first:'Jordan',last:'Whitaker',nickname:'JW',office:'newyork',status:'busy',did:'',ext:''},
+  {first:'Samantha',last:'Cho',nickname:'Sam',office:'newyork',status:'available',did:'',ext:''},
+  {first:'David',last:'Okonkwo',nickname:'Dave',office:'newyork',status:'dnd',did:'',ext:''},
+  {first:'Rachel',last:'Steinberg',nickname:'Rach',office:'newyork',status:'busy',did:'',ext:''},
+  {first:'Miriam',last:'Al-Farsi',nickname:'Miri',office:'newyork',status:'available',did:'',ext:''},
+  {first:'William',last:'Navarro',nickname:'Will',office:'chicago',status:'available',did:'',ext:''},
+  {first:'Olivia',last:'Tanaka',nickname:'Liv',office:'chicago',status:'busy',did:'',ext:''},
+  {first:'Brian',last:'Callahan',nickname:'BC',office:'chicago',status:'available',did:'',ext:''},
+  {first:'Amara',last:'Osei',nickname:'Mari',office:'chicago',status:'away',did:'',ext:''},
+  {first:'Patrick',last:'Brennan',nickname:'Pat',office:'chicago',status:'busy',did:'',ext:''},
+  {first:'Henry',last:'Liang',nickname:'Hank',office:'chicago',status:'available',did:'',ext:''}
 ];
 
-const extPrefixes = { boston:'10', newyork:'20', chicago:'30' };
+function xmur3(str){let h=1779033703^str.length;for(let i=0;i<str.length;i++){h=Math.imul(h^str.charCodeAt(i),3432918353);h=(h<<13)|(h>>>19);}return function(){h=Math.imul(h^(h>>>16),2246822507);h=Math.imul(h^(h>>>13),3266489909);return(h^=h>>>16)>>>0;};}
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^(a>>>15),1|a);t=t+Math.imul(t^(t>>>7),61|t)^t;return((t^(t>>>14))>>>0)/4294967296;};}
+function makeRng(s){return mulberry32(xmur3(s)());}
 
-const attorneys = [
-  { first:'Catherine', last:'Harwell', nickname:'Cat', office:'boston', status:'available', did:'', ext:'' },
-  { first:'Marcus', last:'Delaney', nickname:'Marc', office:'boston', status:'busy', did:'', ext:'' },
-  { first:'Priya', last:'Venkatesh', nickname:'Pri', office:'boston', status:'available', did:'', ext:'' },
-  { first:'Thomas', last:'Fitzgerald', nickname:'Fitz', office:'boston', status:'away', did:'', ext:'' },
-  { first:'Daniel', last:'Petrov', nickname:'Dan', office:'boston', status:'available', did:'', ext:'' },
-  { first:'Sofia', last:'Marquez', nickname:'Sofi', office:'boston', status:'busy', did:'', ext:'' },
-  { first:'Elena', last:'Rossi', nickname:'Lena', office:'newyork', status:'available', did:'', ext:'' },
-  { first:'Jordan', last:'Whitaker', nickname:'JW', office:'newyork', status:'busy', did:'', ext:'' },
-  { first:'Samantha', last:'Cho', nickname:'Sam', office:'newyork', status:'available', did:'', ext:'' },
-  { first:'David', last:'Okonkwo', nickname:'Dave', office:'newyork', status:'dnd', did:'', ext:'' },
-  { first:'Rachel', last:'Steinberg', nickname:'Rach', office:'newyork', status:'busy', did:'', ext:'' },
-  { first:'Miriam', last:'Al-Farsi', nickname:'Miri', office:'newyork', status:'available', did:'', ext:'' },
-  { first:'William', last:'Navarro', nickname:'Will', office:'chicago', status:'available', did:'', ext:'' },
-  { first:'Olivia', last:'Tanaka', nickname:'Liv', office:'chicago', status:'busy', did:'', ext:'' },
-  { first:'Brian', last:'Callahan', nickname:'BC', office:'chicago', status:'available', did:'', ext:'' },
-  { first:'Amara', last:'Osei', nickname:'Mari', office:'chicago', status:'away', did:'', ext:'' },
-  { first:'Patrick', last:'Brennan', nickname:'Pat', office:'chicago', status:'busy', did:'', ext:'' },
-  { first:'Henry', last:'Liang', nickname:'Hank', office:'chicago', status:'available', did:'', ext:'' }
-];
-
-// Generate stable DIDs and extensions
-(function assignNumbers() {
-  const rng = mulberry32(xmur3('ropes-gray-directory')());
-  let extCounters = { boston: 0, newyork: 0, chicago: 0 };
-  attorneys.forEach(a => {
-    const off = offices.find(o => o.key === a.office);
-    const n1 = String(Math.floor(rng() * 900 + 100));
-    const n2 = String(Math.floor(rng() * 9000 + 1000));
-    a.did = `(${off.area}) ${n1}-${n2}`;
-    extCounters[a.office]++;
-    const extNum = extCounters[a.office];
-    a.ext = extPrefixes[a.office] + String(100 + extNum);
+(function assignNumbers(){
+  const rng=mulberry32(xmur3('ropes-gray-directory')());
+  let ec={boston:0,newyork:0,chicago:0};
+  attorneys.forEach(a=>{
+    const off=offices.find(o=>o.key===a.office);
+    const n1=String(Math.floor(rng()*900+100)),n2=String(Math.floor(rng()*9000+1000));
+    a.did=`+1${off.area}${n1}${n2}`;
+    ec[a.office]++;
+    a.ext=extPrefixes[a.office]+String(100+ec[a.office]);
   });
 })();
 
-const clientNames = [
-  'Margaret Thornton','Richard Kingsley','Beatrice Wainwright','Phillip Ashford',
-  'Dorothy Huxley','Gerald Pemberton','Eleanor Whitfield','Arthur Covington',
-  'Victoria Langford','Sebastian Mercer','Caroline Aldridge','Reginald Fairbanks',
-  'Constance Hartwell','Frederick Beaumont','Isabelle Rutherford','Theodore Kensington',
-  'Harriet Blackwood','Lawrence Sinclair','Penelope Crawford','Nathaniel Sterling',
-  'Charlotte Abernathy','Douglas Worthington','Genevieve Holloway','Archibald Fleming'
-];
+const clientNames=['Margaret Thornton','Richard Kingsley','Beatrice Wainwright','Phillip Ashford','Dorothy Huxley','Gerald Pemberton','Eleanor Whitfield','Arthur Covington','Victoria Langford','Sebastian Mercer','Caroline Aldridge','Reginald Fairbanks','Constance Hartwell','Frederick Beaumont','Isabelle Rutherford','Theodore Kensington','Harriet Blackwood','Lawrence Sinclair','Penelope Crawford','Nathaniel Sterling','Charlotte Abernathy','Douglas Worthington','Genevieve Holloway','Archibald Fleming'];
+const internalCallers=['Front Desk — Boston','IT Help Desk','Mailroom — Boston','Conference Room B','Parking Garage Office','Security Desk','HR Department','Office Manager — Boston'];
 
-const internalCallers = [
-  'Front Desk — Boston','IT Help Desk','Mailroom — Boston','Conference Room B',
-  'Parking Garage Office','Security Desk','HR Department','Office Manager — Boston'
-];
+let currentStatus='busy',dirFilters=new Set(),queueFilter='all';
+let activeCall=null,callConnected=false,callTimer=0,callTimerInterval=null;
+let isOnHold=false,isConference=false,isRecPaused=false,conferenceTarget=null;
+let queueData=[],availableCount=0;
 
-let currentStatus='busy', queueFilter='all';
-let dirFilters=new Set(); // empty = show all
-let activeCall=null, callConnected=false, callTimer=0, callTimerInterval=null;
-let isOnHold=false, isConference=false, conferenceTarget=null;
-let queueData=[], availableCount=0;
+function genPhone(rng){const area=[617,212,312,508,718,773,646,857,929,331];return `+1${area[Math.floor(rng()*area.length)]}${String(Math.floor(rng()*900+100))}${String(Math.floor(rng()*9000+1000))}`;}
+function genExtension(rng){return `x${String(Math.floor(rng()*9000+10000))}`;}
+function fmtE164(n){if(!n||n.startsWith('x'))return n;const d=n.replace(/\D/g,'');if(d.length===11)return `+${d}`;return n;}
 
-function xmur3(str) { let h=1779033703^str.length; for(let i=0;i<str.length;i++){h=Math.imul(h^str.charCodeAt(i),3432918353);h=(h<<13)|(h>>>19);} return function(){h=Math.imul(h^(h>>>16),2246822507);h=Math.imul(h^(h>>>13),3266489909);return(h^=h>>>16)>>>0;}; }
-function mulberry32(a) { return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^(a>>>15),1|a);t=t+Math.imul(t^(t>>>7),61|t)^t;return((t^(t>>>14))>>>0)/4294967296;}; }
-function makeRng(s) { return mulberry32(xmur3(s)()); }
-
-function genPhone(rng) { const area=[617,212,312,508,718,773,646,857,929,331]; return `(${area[Math.floor(rng()*area.length)]}) ${String(Math.floor(rng()*900+100))}-${String(Math.floor(rng()*9000+1000))}`; }
-function genExtension(rng) { return `x${String(Math.floor(rng()*9000+10000))}`; }
-
-function generateQueue() {
-  const cycle=Math.floor(Date.now()/7000), rng=makeRng('reception-queue-'+cycle);
-  const numCalls=Math.floor(rng()*6)+4, calls=[], usedClients=new Set();
-  for(let i=0;i<numCalls;i++){
+function generateQueue(){
+  const cycle=Math.floor(Date.now()/7000),rng=makeRng('reception-queue-'+cycle);
+  const n=Math.floor(rng()*6)+4,calls=[],used=new Set();
+  for(let i=0;i<n;i++){
     const office=offices[Math.floor(rng()*offices.length)];
-    const offAtty=attorneys.filter(a=>a.office===office.key);
-    const attorney=offAtty[Math.floor(rng()*offAtty.length)];
-    let client; do{client=clientNames[Math.floor(rng()*clientNames.length)];}while(usedClients.has(client)&&usedClients.size<clientNames.length); usedClients.add(client);
-    const isVip=rng()<0.3, hasAttorney=rng()>0.25;
-    const waitSec=Math.floor(rng()*300)+10+Math.floor((Date.now()%7000)/1000);
-    calls.push({id:i,office,attorney:hasAttorney?attorney:null,client,phone:genPhone(rng),vip:isVip,waitSec});
+    const oa=attorneys.filter(a=>a.office===office.key);
+    const attorney=oa[Math.floor(rng()*oa.length)];
+    let client;do{client=clientNames[Math.floor(rng()*clientNames.length)];}while(used.has(client)&&used.size<clientNames.length);used.add(client);
+    const isVip=rng()<0.3,hasAtty=rng()>0.25;
+    const ws=Math.floor(rng()*300)+10+Math.floor((Date.now()%7000)/1000);
+    calls.push({id:i,office,attorney:hasAtty?attorney:null,client,phone:genPhone(rng),vip:isVip,waitSec:ws});
   }
-  calls.sort((a,b)=>{ if(a.vip&&!b.vip)return -1; if(!a.vip&&b.vip)return 1; return b.waitSec-a.waitSec; });
+  calls.sort((a,b)=>{if(a.vip&&!b.vip)return-1;if(!a.vip&&b.vip)return 1;return b.waitSec-a.waitSec;});
   queueData=calls;
 }
+function formatWait(s){if(s<60)return s+'s';const m=Math.floor(s/60);return m<60?m+'m '+(s%60)+'s':Math.floor(m/60)+'h '+(m%60)+'m';}
 
-function formatWait(s) { if(s<60)return s+'s'; const m=Math.floor(s/60); return m<60?m+'m '+(s%60)+'s':Math.floor(m/60)+'h '+(m%60)+'m'; }
-
-function renderQueue() {
-  generateQueue();
-  let filtered=queueData;
-  if(queueFilter==='vip')filtered=queueData.filter(c=>c.vip);
-  else if(queueFilter!=='all')filtered=queueData.filter(c=>c.office.key===queueFilter);
-  document.getElementById('queueCount').textContent=filtered.length+' call'+(filtered.length!==1?'s':'');
-  const list=document.getElementById('queueList'); list.innerHTML='';
-  filtered.forEach(call=>{
-    const div=document.createElement('div'); div.className='queue-item'+(call.vip?' vip':'');
-    const attyHtml=call.attorney?`<div class="qi-attorney">Atty: <strong>${call.attorney.first} ${call.attorney.last}</strong></div>`:`<div class="qi-no-attorney">No attorney assigned</div>`;
-    div.innerHTML=`<div class="qi-top"><div class="qi-office"><span class="office-dot ${call.office.dot}"></span><span class="office-name">${call.office.name}</span></div><div class="qi-badges">${call.vip?'<span class="vip-badge">VIP</span>':''}<span class="qi-wait">${formatWait(call.waitSec)}</span></div></div><div class="qi-middle"><div class="qi-caller">${call.client}</div><div class="qi-callerid">${call.phone}</div></div><div class="qi-bottom">${attyHtml}<button class="qi-pick-btn" onclick="pickCall(${call.id})">Pick</button></div>`;
+function renderQueue(){
+  generateQueue();let f=queueData;
+  if(queueFilter==='vip')f=queueData.filter(c=>c.vip);
+  else if(queueFilter!=='all')f=queueData.filter(c=>c.office.key===queueFilter);
+  document.getElementById('queueCount').textContent=f.length+' call'+(f.length!==1?'s':'');
+  const list=document.getElementById('queueList');list.innerHTML='';
+  f.forEach(call=>{
+    const div=document.createElement('div');div.className='queue-item'+(call.vip?' vip':'');
+    const ah=call.attorney?`<div class="qi-attorney">Atty: <strong>${call.attorney.first} ${call.attorney.last}</strong></div>`:`<div class="qi-no-attorney">No attorney assigned</div>`;
+    div.innerHTML=`<div class="qi-top"><div class="qi-office"><span class="office-dot ${call.office.dot}"></span><span class="office-name">${call.office.name}</span></div><div class="qi-badges">${call.vip?'<span class="vip-badge">VIP</span>':''}<span class="qi-wait">${formatWait(call.waitSec)}</span></div></div><div class="qi-middle"><div class="qi-caller">${call.client}</div><div class="qi-callerid">${call.phone}</div></div><div class="qi-bottom">${ah}<button class="qi-pick-btn" onclick="pickCall(${call.id})">Pick</button></div>`;
     list.appendChild(div);
   });
 }
 
-function renderDirectory() {
+function renderDirectory(){
   const query=document.getElementById('dirSearch').value.toLowerCase().trim();
-  const list=document.getElementById('directoryList'); list.innerHTML='';
+  const list=document.getElementById('directoryList');list.innerHTML='';
   let filtered=[...attorneys];
-  const statusFilters=new Set([...dirFilters].filter(f=>f==='available'));
-  const officeFilters=new Set([...dirFilters].filter(f=>['boston','newyork','chicago'].includes(f)));
-  if(statusFilters.size>0) filtered=filtered.filter(a=>a.status==='available');
-  if(officeFilters.size>0) filtered=filtered.filter(a=>officeFilters.has(a.office));
-  if(query){ filtered=filtered.filter(a=>
-    a.first.toLowerCase().includes(query)||a.last.toLowerCase().includes(query)||
-    a.nickname.toLowerCase().includes(query)||a.office.toLowerCase().includes(query)||
-    a.did.includes(query)||a.ext.includes(query)||
-    (a.first+' '+a.last).toLowerCase().includes(query)); }
+  const sf=new Set([...dirFilters].filter(f=>f==='available'));
+  const of2=new Set([...dirFilters].filter(f=>['boston','newyork','chicago'].includes(f)));
+  if(sf.size>0)filtered=filtered.filter(a=>a.status==='available');
+  if(of2.size>0)filtered=filtered.filter(a=>of2.has(a.office));
+  if(query){filtered=filtered.filter(a=>a.first.toLowerCase().includes(query)||a.last.toLowerCase().includes(query)||a.nickname.toLowerCase().includes(query)||a.office.toLowerCase().includes(query)||a.did.includes(query)||a.ext.includes(query)||(a.first+' '+a.last).toLowerCase().includes(query));}
   filtered.sort((a,b)=>{const so={available:0,busy:1,away:2,dnd:3};return so[a.status]-so[b.status]||a.last.localeCompare(b.last);});
   filtered.forEach(att=>{
-    const div=document.createElement('div'); div.className='dir-item';
-    const canAct=callConnected&&att.status==='available';
-    div.innerHTML=`
-      <div class="di-top"><div><span class="di-name">${att.first} ${att.last}</span> <span class="di-nickname">"${att.nickname}"</span></div><span class="di-status ${att.status}"><span class="di-status-dot"></span>${att.status.charAt(0).toUpperCase()+att.status.slice(1)}</span></div>
-      <div class="di-mid"><span class="di-phone">DID: ${att.did}</span><span class="di-ext">Ext: ${att.ext}</span></div>
-      <div class="di-bottom"><span class="di-office">${offices.find(o=>o.key===att.office).name}</span><div class="di-actions"><button class="di-action-btn di-transfer-btn ${canAct?'show':''}" onclick="transferTo('${att.first}','${att.last}','${att.office}')">Transfer</button><button class="di-action-btn di-conf-btn ${canAct?'show':''}" onclick="confTo('${att.first}','${att.last}','${att.office}','${att.ext}')">Conf</button></div></div>`;
+    const div=document.createElement('div');div.className='dir-item';const canAct=callConnected;
+    div.innerHTML=`<div class="di-top"><div><span class="di-name">${att.first} ${att.last}</span> <span class="di-nickname">"${att.nickname}"</span></div><span class="di-status ${att.status}"><span class="di-status-dot"></span>${att.status.charAt(0).toUpperCase()+att.status.slice(1)}</span></div><div class="di-mid"><span class="di-phone">DID: ${att.did}</span><span class="di-ext">Ext: ${att.ext}</span></div><div class="di-bottom"><span class="di-office">${offices.find(o=>o.key===att.office).name}</span><div class="di-actions"><button class="di-action-btn di-transfer-btn ${canAct?'show':''}" onclick="transferTo('${att.first}','${att.last}','${att.office}')">Transfer</button><button class="di-action-btn di-conf-btn ${canAct?'show':''}" onclick="confTo('${att.first}','${att.last}','${att.office}','${att.ext}')">Consult</button></div></div>`;
     list.appendChild(div);
   });
 }
 
-function setStatus(s) {
-  currentStatus=s;
-  document.getElementById('btnAvail').className='status-btn'+(s==='available'?' active-available':'');
-  document.getElementById('btnBusy').className='status-btn'+(s==='busy'?' active-busy':'');
-  if(s==='available'&&!callConnected&&!activeCall){availableCount++;setTimeout(simulateIncomingCall,1200+Math.random()*1500);}
-}
+function setStatus(s){currentStatus=s;document.getElementById('btnAvail').className='status-btn'+(s==='available'?' active-available':'');document.getElementById('btnBusy').className='status-btn'+(s==='busy'?' active-busy':'');if(s==='available'&&!callConnected&&!activeCall){availableCount++;setTimeout(simulateIncomingCall,1200+Math.random()*1500);}}
+function setTheme(t){if(t==='dark')document.body.setAttribute('data-theme','dark');else document.body.removeAttribute('data-theme');document.getElementById('lightBtn').classList.toggle('active',t==='light');document.getElementById('darkBtn').classList.toggle('active',t==='dark');}
+function setQueueFilter(f,el){queueFilter=f;document.querySelectorAll('.queue-filters .filter-btn').forEach(b=>b.classList.remove('active'));el.classList.add('active');renderQueue();}
+function setDirFilter(f,el){if(f==='all'){dirFilters.clear();document.querySelectorAll('.dir-filters .dir-filter-btn').forEach(b=>b.classList.remove('active'));el.classList.add('active');}else{document.querySelector('.dir-filters .dir-filter-btn[data-df="all"]').classList.remove('active');if(dirFilters.has(f)){dirFilters.delete(f);el.classList.remove('active');}else{dirFilters.add(f);el.classList.add('active');}if(dirFilters.size===0)document.querySelector('.dir-filters .dir-filter-btn[data-df="all"]').classList.add('active');}renderDirectory();}
 
-function setTheme(t) {
-  if(t==='dark')document.body.setAttribute('data-theme','dark');else document.body.removeAttribute('data-theme');
-  document.getElementById('lightBtn').classList.toggle('active',t==='light');
-  document.getElementById('darkBtn').classList.toggle('active',t==='dark');
-}
-
-function setQueueFilter(f,el) { queueFilter=f; document.querySelectorAll('.queue-filters .filter-btn').forEach(b=>b.classList.remove('active')); el.classList.add('active'); renderQueue(); }
-function setDirFilter(f,el) {
-  if(f==='all'){
-    dirFilters.clear();
-    document.querySelectorAll('.dir-filters .dir-filter-btn').forEach(b=>b.classList.remove('active'));
-    el.classList.add('active');
-  } else {
-    // Remove 'All' highlight
-    document.querySelector('.dir-filters .dir-filter-btn[data-df="all"]').classList.remove('active');
-    // Toggle this filter
-    if(dirFilters.has(f)){ dirFilters.delete(f); el.classList.remove('active'); }
-    else { dirFilters.add(f); el.classList.add('active'); }
-    // If nothing selected, revert to All
-    if(dirFilters.size===0){
-      document.querySelector('.dir-filters .dir-filter-btn[data-df="all"]').classList.add('active');
-    }
-  }
-  renderDirectory();
-}
-
-function simulateIncomingCall() {
+function simulateIncomingCall(){
   if(currentStatus!=='available'||callConnected||activeCall)return;
-  const rng=makeRng('incoming-'+Date.now());
-  const banner=document.getElementById('incomingBanner');
-  const details=document.getElementById('incomingDetails');
+  const rng=makeRng('incoming-'+Date.now()),banner=document.getElementById('incomingBanner'),details=document.getElementById('incomingDetails');
   if(availableCount%2===0){
-    const caller=internalCallers[Math.floor(rng()*internalCallers.length)];
-    const ext=genExtension(rng);
-    activeCall={caller,callerPhone:ext,office:offices[0],attorney:null,vip:false,internal:true};
+    const caller=internalCallers[Math.floor(rng()*internalCallers.length)],ext=genExtension(rng);
+    activeCall={caller,callerPhone:ext,office:offices[0],attorney:null,vip:false,internal:true,calledNum:offices[0].mainDid};
     banner.classList.add('internal');
-    details.innerHTML=`<h3>&#9742; Internal Call — Boston Office <span class="internal-inline">INTERNAL</span></h3><p><strong>${caller}</strong> &nbsp;·&nbsp; ${ext}</p><p style="font-size:12px;color:var(--text-muted)">Internal transfer — no client or attorney</p>`;
-  } else {
-    const ba=attorneys.filter(a=>a.office==='boston');
-    const attorney=ba[Math.floor(rng()*ba.length)];
-    const client=clientNames[Math.floor(rng()*clientNames.length)];
-    activeCall={caller:client,callerPhone:genPhone(rng),office:offices[0],attorney,vip:true,internal:false};
+    details.innerHTML=`<h3>&#9742; Incoming Call — Boston Office <span class="badge-internal">INTERNAL</span></h3><p><strong>${caller}</strong> &nbsp;·&nbsp; ${ext}</p><p style="font-size:12px;color:var(--text-muted)">Internal transfer — no client or attorney</p>`;
+  }else{
+    const ba=attorneys.filter(a=>a.office==='boston'),attorney=ba[Math.floor(rng()*ba.length)],client=clientNames[Math.floor(rng()*clientNames.length)],phone=genPhone(rng);
+    activeCall={caller:client,callerPhone:phone,office:offices[0],attorney,vip:true,internal:false,calledNum:offices[0].mainDid};
     banner.classList.remove('internal');
-    details.innerHTML=`<h3>&#9742; Incoming Call — ${activeCall.office.name} <span class="vip-inline">VIP</span></h3><p><strong>${activeCall.caller}</strong> &nbsp;·&nbsp; ${activeCall.callerPhone}</p><p>Assigned Attorney: <strong>${activeCall.attorney.first} ${activeCall.attorney.last}</strong></p>`;
+    details.innerHTML=`<h3>&#9742; Incoming Call — ${activeCall.office.name} <span class="badge-vip">VIP</span></h3><p><strong>${client}</strong> &nbsp;·&nbsp; ${phone}</p><p>Assigned Attorney: <strong>${attorney.first} ${attorney.last}</strong></p>`;
   }
   banner.classList.add('active');
 }
 
-function connectCall() {
-  callConnected=true; callTimer=0; isOnHold=false; isConference=false; conferenceTarget=null;
-  updateConnectedUI();
+function populateCCBar(){
+  const c=activeCall;
+  // Row 1: caller id
+  document.getElementById('ccCallerId').textContent=fmtE164(c.callerPhone);
+  // Row 2 badge
   let badge='';
-  if(activeCall.vip)badge='<span class="vip-inline">VIP</span>';
-  else if(activeCall.internal)badge='<span class="internal-inline">INTERNAL</span>';
-  let attyText=activeCall.attorney?` &nbsp;·&nbsp; Atty: ${activeCall.attorney.first} ${activeCall.attorney.last}`:'';
-  document.getElementById('connectedDetails').innerHTML=`<h3>Connected — ${activeCall.office.name} ${badge}<span class="conf-status" id="confLabel">CONFERENCE</span></h3><p><strong>${activeCall.caller}</strong> &nbsp;·&nbsp; ${activeCall.callerPhone}${attyText}</p>`;
-  document.getElementById('connectedBar').classList.add('active');
-  document.getElementById('connectedBar').classList.remove('on-hold');
-  callTimerInterval=setInterval(()=>{callTimer++;document.getElementById('connectedTimer').textContent=Math.floor(callTimer/60)+':'+String(callTimer%60).padStart(2,'0');},1000);
+  if(c.vip)badge='<span class="badge-vip">VIP</span>';
+  else if(c.internal)badge='<span class="badge-internal">INTERNAL</span>';
+  document.getElementById('ccBadgeArea').innerHTML=badge;
+  // Row 3 fields
+  document.getElementById('fPhoneNum').textContent=fmtE164(c.callerPhone);
+  document.getElementById('fDNIS').textContent=c.calledNum;
+  document.getElementById('fQueue').textContent=c.office.name;
+  if(c.attorney){
+    document.getElementById('fAttorney').innerHTML=`${c.attorney.first} ${c.attorney.last} <span style="color:var(--text-muted);font-family:'DM Mono',monospace;font-size:11px">(Ext: ${c.attorney.ext})</span>`;
+  }else{
+    document.getElementById('fAttorney').textContent='Unassigned';
+  }
+  document.getElementById('fCSQ').textContent=c.office.name.replace(' Office','')+'_Reception';
+  document.getElementById('fCustType').innerHTML=c.vip?'VIP <span class="badge-vip">VIP</span>':c.internal?'Internal <span class="badge-internal">INT</span>':'Standard';
+}
+
+function updateCCState(){
+  const r2=document.getElementById('ccRow2');
+  r2.classList.toggle('on-hold',isOnHold);
+  document.getElementById('ccHoldLabel').classList.toggle('show',isOnHold);
+  document.getElementById('ccConfLabel').classList.toggle('show',isConference);
+  const hb=document.getElementById('btnHold');
+  hb.classList.toggle('active-hold',isOnHold);
+  hb.innerHTML=isOnHold?'<span class="cc-ctrl-icon">&#9654;</span> Resume':'<span class="cc-ctrl-icon">&#9612;&#9612;</span> Hold';
+  document.getElementById('btnConsult').classList.toggle('active-hold',isConference);
+}
+
+function connectCall(){
+  callConnected=true;callTimer=0;isOnHold=false;isConference=false;isRecPaused=false;conferenceTarget=null;
+  populateCCBar();updateCCState();
+  document.getElementById('ccBar').classList.add('active');
+  document.getElementById('btnPauseRec').innerHTML='<span class="cc-ctrl-icon">&#9210;</span> Pause Recording';
+  callTimerInterval=setInterval(()=>{callTimer++;const m=String(Math.floor(callTimer/60)).padStart(2,'0'),s=String(callTimer%60).padStart(2,'0');document.getElementById('ccTimer').textContent=m+':'+s;},1000);
   renderDirectory();
 }
 
-function updateConnectedUI() {
-  document.getElementById('btnHold').classList.toggle('active',isOnHold);
-  document.getElementById('btnHold').innerHTML=isOnHold?'&#9654; Resume':'&#9208; Hold';
-  document.getElementById('connectedBar').classList.toggle('on-hold',isOnHold);
-  document.getElementById('btnConf').classList.toggle('active',isConference);
-  const cl=document.getElementById('confLabel');
-  if(cl)cl.classList.toggle('show',isConference);
-}
+function answerCall(){if(!activeCall)return;document.getElementById('incomingBanner').classList.remove('active','internal');connectCall();}
+function declineCall(){document.getElementById('incomingBanner').classList.remove('active','internal');activeCall=null;}
 
-function answerCall() {
-  if(!activeCall)return;
-  document.getElementById('incomingBanner').classList.remove('active','internal');
-  connectCall();
-}
-
-function declineCall() { document.getElementById('incomingBanner').classList.remove('active','internal'); activeCall=null; }
-
-function endCall() {
+function endCall(){
   clearInterval(callTimerInterval);
-  document.getElementById('connectedBar').classList.remove('active','on-hold');
-  callConnected=false;activeCall=null;callTimer=0;isOnHold=false;isConference=false;conferenceTarget=null;
-  document.getElementById('connectedTimer').textContent='0:00';
-  setStatus('busy'); renderDirectory();
+  document.getElementById('ccBar').classList.remove('active');
+  callConnected=false;activeCall=null;callTimer=0;isOnHold=false;isConference=false;isRecPaused=false;
+  document.getElementById('ccTimer').textContent='00:00';
+  setStatus('busy');renderDirectory();
 }
 
-function pickCall(id) {
-  const call=queueData.find(c=>c.id===id); if(!call)return;
-  activeCall={caller:call.client,callerPhone:call.phone,office:call.office,attorney:call.attorney,vip:call.vip,internal:false};
+function pickCall(id){
+  const call=queueData.find(c=>c.id===id);if(!call)return;
+  activeCall={caller:call.client,callerPhone:call.phone,office:call.office,attorney:call.attorney,vip:call.vip,internal:false,calledNum:call.office.mainDid};
   connectCall();
 }
 
-function toggleHold() {
-  if(!callConnected)return;
-  isOnHold=!isOnHold;
-  updateConnectedUI();
-}
+function toggleHold(){if(!callConnected)return;isOnHold=!isOnHold;updateCCState();}
+function toggleConference(){if(!callConnected)return;if(!isConference){document.getElementById('dirSearch').value='';renderDirectory();document.getElementById('dirSearch').focus();}}
+function toggleRecording(){if(!callConnected)return;isRecPaused=!isRecPaused;document.getElementById('btnPauseRec').innerHTML=isRecPaused?'<span class="cc-ctrl-icon">&#9210;</span> Resume Recording':'<span class="cc-ctrl-icon">&#9210;</span> Pause Recording';}
 
-function toggleConference() {
-  if(!callConnected)return;
-  if(!isConference){
-    document.getElementById('dirSearch').focus();
-    if(activeCall&&activeCall.attorney){ document.getElementById('dirSearch').value=activeCall.attorney.last; renderDirectory(); }
-  }
-}
+function initiateTransfer(){document.getElementById('dirSearch').value='';renderDirectory();document.getElementById('dirSearch').focus();}
 
-function initiateTransfer() {
-  document.getElementById('dirSearch').focus();
-  if(activeCall&&activeCall.attorney){ document.getElementById('dirSearch').value=activeCall.attorney.last; renderDirectory(); }
-}
-
-function transferTo(first,last,office) {
+function transferTo(first,last,office){
   if(!callConnected)return;
   const ov=document.getElementById('transferOverlay'),pr=document.getElementById('transferProgress'),su=document.getElementById('transferSuccess');
   document.getElementById('overlayTitle').textContent='Transferring Call...';
   document.getElementById('transferTo').textContent=`${activeCall.caller} → ${first} ${last} (${offices.find(o=>o.key===office).name})`;
   pr.classList.remove('hide');su.classList.remove('show');ov.classList.add('active');
-  setTimeout(()=>{pr.classList.add('hide');su.classList.remove('show');void su.offsetWidth;su.classList.add('show');
-    document.getElementById('successTitle').textContent='Transfer Complete';
-    document.getElementById('transferDone').textContent=`Call transferred to ${first} ${last} successfully.`;},2200);
+  setTimeout(()=>{pr.classList.add('hide');su.classList.remove('show');void su.offsetWidth;su.classList.add('show');document.getElementById('successTitle').textContent='Transfer Complete';document.getElementById('transferDone').textContent=`Call transferred to ${first} ${last} successfully.`;},2200);
 }
 
-function confTo(first,last,office,ext) {
+function confTo(first,last,office,ext){
   if(!callConnected)return;
-  isConference=true; conferenceTarget={first,last,office,ext};
-  updateConnectedUI();
+  isConference=true;conferenceTarget={first,last,office,ext};updateCCState();
   const ov=document.getElementById('transferOverlay'),pr=document.getElementById('transferProgress'),su=document.getElementById('transferSuccess');
-  document.getElementById('overlayTitle').textContent='Adding to Conference...';
+  document.getElementById('overlayTitle').textContent='Consulting...';
   document.getElementById('transferTo').textContent=`Bridging ${first} ${last} (Ext: ${ext}) into call with ${activeCall.caller}`;
   pr.classList.remove('hide');su.classList.remove('show');ov.classList.add('active');
-  setTimeout(()=>{pr.classList.add('hide');su.classList.remove('show');void su.offsetWidth;su.classList.add('show');
-    document.getElementById('successTitle').textContent='Conference Active';
-    document.getElementById('transferDone').textContent=`${first} ${last} has joined the call.`;},2000);
+  setTimeout(()=>{pr.classList.add('hide');su.classList.remove('show');void su.offsetWidth;su.classList.add('show');document.getElementById('successTitle').textContent='Conference Active';document.getElementById('transferDone').textContent=`${first} ${last} has joined the call.`;},2000);
 }
 
-function closeTransfer() {
-  document.getElementById('transferOverlay').classList.remove('active');
-  if(!isConference){ endCall(); document.getElementById('dirSearch').value=''; renderDirectory(); }
-}
+function closeTransfer(){document.getElementById('transferOverlay').classList.remove('active');if(!isConference){endCall();document.getElementById('dirSearch').value='';renderDirectory();}}
 
 const params=new URLSearchParams(window.location.search);
-setTheme(params.get('theme')||'light');
-setStatus('busy'); renderQueue(); renderDirectory();
+setTheme(params.get('theme')||'light');setStatus('busy');renderQueue();renderDirectory();
 setInterval(renderQueue,2000);
 setInterval(()=>{const opts=['available','available','available','busy','busy','away','dnd'];const rng=makeRng('status-'+Date.now());attorneys.forEach(a=>{a.status=opts[Math.floor(rng()*opts.length)];});renderDirectory();},12000);
 </script>
